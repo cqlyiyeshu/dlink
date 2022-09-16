@@ -170,7 +170,6 @@ public class MysqlCDCBuilder extends AbstractCDCBuilder implements CDCBuilder {
     }
 
     public List<String> getSchemaList() {
-        // test by cql
         List<String> schemaList = new ArrayList<>();
         String schema = config.getDatabase();
         if (Asserts.isNotNullString(schema)) {
